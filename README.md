@@ -9,10 +9,10 @@ import KeyWatcher from 'react-key-watcher'
 
 <KeyWatcher
   keyCodes={[
-    101, // e
-    113, // q
-    114, // r
-    119, // w
+    69, // e
+    81, // q
+    82, // r
+    87, // w
   ]}
   onKeyComboPressed={() => console.log('qwer pressed!')}
 />
