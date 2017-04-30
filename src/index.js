@@ -17,7 +17,7 @@ class KeyWatcher extends Component {
   }
 
   componentDidMount() {
-    if (window) {
+    if (window && this.props.keyCodes.length) {
       window.addEventListener('keydown', this.handleKeyDown)
       window.addEventListener('keyup', this.handleKeyUp)
     }
@@ -51,6 +51,10 @@ class KeyWatcher extends Component {
 KeyWatcher.propTypes = {
   onKeyComboPressed: PropTypes.func.isRequired,
   keyCodes: PropTypes.arrayOf(PropTypes.number).isRequired,
+}
+
+KeyWatcher.defaultProps = {
+  keyCodes: [],
 }
 
 export default KeyWatcher
