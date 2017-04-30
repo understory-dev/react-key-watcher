@@ -2,6 +2,8 @@
 
 Watch for simultaneous keypresses.
 
+[![Build Status](https://travis-ci.org/understory-dev/react-key-watcher.svg?branch=master)](https://travis-ci.org/understory-dev/react-key-watcher)
+
 ```js
 import KeyWatcher from 'react-key-watcher'
 
